@@ -5,18 +5,18 @@ function Person(name, age) {
     this.name = name;
 	this.age = age;
 	}
-	greet(){
+	this.greet=function(){
 		console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`)
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	}
 }
 
-function extends Employee(name, age, jobTitle) {
+function  Employee(name, age, jobTitle) {
 	constructor(name,age,jobTitle){
 		super(name,age);
 		this.jobTitle = jobTitle;
 	}
-	jobGreet(){
+	this.jobGreet=function(){
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`)
 	}
 }
