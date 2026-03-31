@@ -11,7 +11,7 @@ function Person(name, age) {
 	}
 }
 
-function  Employee(name, age, jobTitle) {
+function extends Employee(name, age, jobTitle) {
 	constructor(name,age,jobTitle){
 		super(name,age);
 		this.jobTitle = jobTitle;
