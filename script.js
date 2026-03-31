@@ -3,16 +3,16 @@ function Person(name, age) {
 
 	constructor(name, age){
     this.name = name;
-		this.age = age;
+	this.age = age;
 	}
-	geet(){
+	greet(){
 		console.log(`Hello, my name is ${name}, I am ${age} years old.`)
 	}
 }
 
 function Employee(name, age, jobTitle) {
 	constructor(jobTitle){
-		super(Person);
+		super(name,age);
 		this.jobTitle = jobTitle;
 	}
 	jobGreet(){
